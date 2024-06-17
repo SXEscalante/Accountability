@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "SwC1JscFWtrya0h/ekiPqRo0Zjt3+6iThejNpZ9Vtks=",
+  "Source": "Accountability.Server",
+  "BasePath": "_content/Accountability.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Sebastian Escalante\\source\\Post capstone\\Accountability is key\\Accountability\\accountability.client\\accountability.client.esproj",
+      "Version": 2,
+      "Source": "accountability.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

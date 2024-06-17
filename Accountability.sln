@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accountability.Server", "Accountability.Server\Accountability.Server.csproj", "{AC7A237D-86B3-4A0C-8A1E-72BB4ED30681}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "accountability.client", "accountability.client\accountability.client.esproj", "{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC7A237D-86B3-4A0C-8A1E-72BB4ED30681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7A237D-86B3-4A0C-8A1E-72BB4ED30681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7A237D-86B3-4A0C-8A1E-72BB4ED30681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7A237D-86B3-4A0C-8A1E-72BB4ED30681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AD59A1-79DE-4E3D-825A-43AF4642B8B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5656676-8A67-4ED3-925B-94ED2AD530D9}
+	EndGlobalSection
+EndGlobal
