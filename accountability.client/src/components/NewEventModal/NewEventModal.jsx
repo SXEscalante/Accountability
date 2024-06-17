@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./NewEventModal.css"
 import axios from "axios";
 
-const NewEventModal = ({ openModal }) => {
+const NewEventModal = ({ openModal, handleEvent }) => {
     const [startTime, setStartTime] = useState();
     const [endTime, setEndTime] = useState();
     const [comment, setComment] = useState('');
@@ -22,6 +22,7 @@ const NewEventModal = ({ openModal }) => {
             const responce = await axios.post(`https://localhost:7163/api/events`, EventData)
             if(responce.status === 201){
                 console.log('Times', startTime, endTime)
+                handleEvent()
                 openModal(false)
             }
         }

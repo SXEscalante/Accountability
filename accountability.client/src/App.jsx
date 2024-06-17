@@ -56,6 +56,7 @@ function App() {
             }
         })
         console.log("times", times)
+        setTimeData(times)
     }
     
     useEffect(() => {
@@ -74,8 +75,8 @@ function App() {
             <p>Track how much time you are spending</p>
             <button onClick={() => setAddPost(true)}>Add new event</button>
             {addPost && 
-                <NewEventModal openModal={setAddPost}/>}
-            <BarGraph dataset={times}/> 
+                <NewEventModal openModal={setAddPost} handleEvent={handleEventData}/>}
+            <BarGraph dataset={timeData}/> 
         </div>
         
     );
