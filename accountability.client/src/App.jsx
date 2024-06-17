@@ -75,7 +75,7 @@ function App() {
             <button onClick={() => setAddPost(true)}>Add new event</button>
             {addPost && 
                 <NewEventModal openModal={setAddPost}/>}
-            <BarGraph dataset={[100, 200, 400]}/> 
+            <BarGraph dataset={times}/> 
         </div>
         
     );

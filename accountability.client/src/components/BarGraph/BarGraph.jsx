@@ -9,7 +9,7 @@ const BarGraph = ({dataset}) => {
                 datasets: [
                     {
                         label: "timespent", 
-                        data: dataset
+                        data: dataset.timeSpent
                     }, 
                 ],
             }}/>
