@@ -9,17 +9,29 @@ const BarGraph = ({dataset}) => {
     const setData = () => {
         var timeSpentArray = []
         var dateLabelArray = []
-        for(var obj of dataset){
-            timeSpentArray.push(obj.timeSpent)
-            dateLabelArray.push(obj.startDate)
+
+        let currentDate = new Date().getDate()
+        for(let i = 1; i <= currentDate; i++){
+            dateLabelArray.push(i)
         }
+
+        for(let date of dateLabelArray){
+            let timeSpent = 0
+            for(let timeObj of dataset){
+                if(parseInt(timeObj.startDate.split('-')[2]) === date){
+                    timeSpent = timeObj.timeSpent
+                }
+            }
+            timeSpentArray.push(timeSpent)
+        }
+
         setTimeData(timeSpentArray)
         setLabelData(dateLabelArray)
     }
     
     useEffect(() => {
         setData()
-    }, []);
+    }, [dataset]);
 
     return ( 
         <div>
