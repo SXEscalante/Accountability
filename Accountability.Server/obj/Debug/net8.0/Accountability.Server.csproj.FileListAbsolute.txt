@@ -137,3 +137,4 @@ C:\Users\Sebastian Escalante\source\Post capstone\Accountability is key\Accounta
 C:\Users\Sebastian Escalante\source\Post capstone\Accountability is key\Accountability\Accountability.Server\obj\Debug\net8.0\Accountability.Server.pdb
 C:\Users\Sebastian Escalante\source\Post capstone\Accountability is key\Accountability\Accountability.Server\obj\Debug\net8.0\Accountability.Server.genruntimeconfig.cache
 C:\Users\Sebastian Escalante\source\Post capstone\Accountability is key\Accountability\Accountability.Server\obj\Debug\net8.0\ref\Accountability.Server.dll
+C:\Users\Sebastian Escalante\source\Post capstone\Accountability is key\Accountability\Accountability.Server\obj\Debug\net8.0\Accountability.Server.sourcelink.json

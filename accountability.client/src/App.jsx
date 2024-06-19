@@ -8,15 +8,14 @@ import BarGraph from './components/BarGraph/BarGraph';
 function App() {
     const [events, setEvents] = useState([]);
     const [addPost, setAddPost] = useState(false);
-    const [dataFetched, setDataFetched] = useState(false);
     const [timeData, setTimeData] = useState([]);
+    const [newData, setNewData] = useState(false);
 
     const handleEventData = async () => {
         try {
             const response = await axios.get(`https://localhost:7163/api/events`)
             if (response.status === 200) {
                 setEvents(response.data)
-                setDataFetched(true)
             }
         } catch (error) {
             console.log("Error getting account info", error)
@@ -64,10 +63,16 @@ function App() {
     }, []);
 
     useEffect(() => {
+        if(newData){
+            handleEventData()
+        }
+    }, [newData]);
+
+    useEffect(() => {
         if(events.length !== 0){
             calculateTimes()
         }
-    }, [dataFetched]);
+    }, [events]);
 
     return (
         <div>
@@ -75,8 +80,8 @@ function App() {
             <p>Track how much time you are spending</p>
             <button onClick={() => setAddPost(true)}>Add new event</button>
             {addPost && 
-                <NewEventModal openModal={setAddPost} handleEvent={handleEventData}/>}
-            <BarGraph dataset={timeData}/> 
+                <NewEventModal openModal={setAddPost} newData={setNewData}/>}
+            <BarGraph dataset={timeData} newData={newData}/> 
         </div>
         
     );
